@@ -6,3 +6,6 @@ backend/.idea
 backend/.env
 .idea
 
+backend/.keystone
+backend/.idea
+backend/.idea/
