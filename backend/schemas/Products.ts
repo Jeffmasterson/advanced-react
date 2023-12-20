@@ -1,8 +1,8 @@
-import { select, text, integer, relationship } from '@keystone-next/fields';
+import { integer, select, text, relationship } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
 
 export const Product = list({
-  // Todo
+  // TODO
   // access:
   fields: {
     name: text({ isRequired: true }),
@@ -33,6 +33,6 @@ export const Product = list({
       },
     }),
     price: integer(),
-    // Todo: Photo
+    // TODO: Photo
   },
 });
