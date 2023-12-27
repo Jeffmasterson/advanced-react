@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps, apollo }) {
   );
 }
 
-MyApp.getInitalProps = async function ({ Component, ctx }) {
+MyApp.getInitialProps = async function ({ Component, ctx }) {
   let pageProps = {};
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx);
@@ -27,5 +27,4 @@ MyApp.getInitalProps = async function ({ Component, ctx }) {
   pageProps.query = ctx.query;
   return { pageProps };
 };
-
 export default withData(MyApp);
